@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--// Using Vue.js CDN -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- Using Vue.js CDN // -->
+    <title>Creating Vue App</title>
+</head>
+<body>
+    <p id="app">{{ name }}</p>
+    <!-- Importing entier Vue App -->
+    <script src="./main.js" ></script>
+    <!-- Mounting the Vue App into the DOM-->
+    <script>
+        /*
+           [ app.mount("#app") ] 
+           >>
+                app= src="./main.js"
+                    (.mount)
+                ("#app")=<p id="app"></p>
+        */
+        const MountedApp = app.mount("#app")
+    </script>
+</body>
+</html>
